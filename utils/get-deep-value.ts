@@ -17,4 +17,11 @@ const obj = {
 
 const value = getDeepValue(obj, "foo", "b");
 
-typeof value === "number";
+console.log(value);
+
+const returnWhatIPassIn = <TVal>(val: TVal) => {
+  return val;
+};
+
+const result = returnWhatIPassIn<string>("a");
+console.log(result);
